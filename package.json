@@ -1,14 +1,21 @@
 {
   "name": "our_cli",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "our_cli脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["vite","typescript","Element Plus"],
+  "author": "yysasy",
+  "bin":{
+    "name":"bin/index.js"
+  },
+  "files":[
+    "dist",
+    "bin"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@inquirer/prompts": "^3.2.0",
