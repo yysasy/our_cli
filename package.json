@@ -10,7 +10,7 @@
   "keywords": ["vite","typescript","Element Plus"],
   "author": "yysasy",
   "bin":{
-    "name":"bin/index.js"
+    "yy_cli":"bin/index.js"
   },
   "files":[
     "dist",
