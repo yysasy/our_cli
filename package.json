@@ -1,7 +1,7 @@
 {
-  "name": "our_cli",
+  "name": "yy_cli",
   "version": "0.0.1",
-  "description": "our_cli脚手架",
+  "description": "yy_cli脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,8 @@
   },
   "files":[
     "dist",
-    "bin"
+    "bin",
+    "README.md"
   ],
   "license": "ISC",
   "devDependencies": {
