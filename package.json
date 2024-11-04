@@ -1,7 +1,7 @@
 {
-  "name": "yysasy_cli",
+  "name": "kuka_cli",
   "version": "0.0.3",
-  "description": "yysasy_cli脚手架",
+  "description": "kuka_cli脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   ],
   "author": "yysasy",
   "bin": {
-    "yy": "bin/index.js"
+    "kuka": "bin/index.js"
   },
   "files": [
     "dist",
