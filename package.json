@@ -1,6 +1,6 @@
 {
   "name": "kuka_cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "kuka_cli脚手架",
   "main": "index.js",
   "scripts": {
