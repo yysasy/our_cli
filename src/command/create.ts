@@ -2,7 +2,8 @@ import path from 'path'
 import fs from 'fs-extra'
 import { input ,select} from '@inquirer/prompts'
 import { clone } from '../utils/clone'
-
+import { version,name} from '../../package.json'
+import { checkVersion } from '../utils/version'
 export interface TemplateInfo {
     name: string; // 模板名称  
     downloadUrl: string; // 模板下载地址
@@ -45,6 +46,7 @@ export function isOverwrite(fileName:string){
     ]
   })
 }
+
 export async function create(projectName?: string) {
   const templateList = Array.from(tempaltes).map((item:[string,TemplateInfo])=>{
     const [name,info] = item
@@ -67,6 +69,8 @@ export async function create(projectName?: string) {
       return
     }
   }
+  // 检测版本更新
+  await checkVersion(name,version)
   const templateName = await select({message:'请选择模板',choices:templateList})
   const info = tempaltes.get(templateName)
   console.log(info);

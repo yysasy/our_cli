@@ -18,5 +18,5 @@ npm install -g kuka_cli
 
 
 - `kuka create <project-name>`：创建一个新的项目。
-- `kuka config`：配置项目。
 - `kuka - v`：查看 kuka_cli 的版本。npm notice Log in on https://registry.npmjs.org/
+- `kuka update`: 更新 kuka_cli 到最新版本。
